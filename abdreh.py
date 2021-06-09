@@ -71,6 +71,9 @@ def detect(image):
 def about():
 	st.write(
 		'''
+		Abdul Rehman
+		Face Detection from images or videos
+		
 		**Haar Cascade** is an object detection algorithm.
 		It can be used to detect objects in images or videos. 
 
@@ -82,10 +85,7 @@ def about():
 			4. Cascading Classifiers
 
 
-
-Read more :point_right: https://docs.opencv.org/2.4/modules/objdetect/doc/cascade_classification.html
-https://sites.google.com/site/5kk73gpu2012/assignment/viola-jones-face-detection#TOC-Image-Pyramid
-		''')
+''')
 
 
 def main():
