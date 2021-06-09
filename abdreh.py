@@ -100,7 +100,7 @@ def main():
     	st.write("Go to the About section from the sidebar to learn about this app")
         
         # You can specify more file types below if you want
-    	image_file = st.file_uploader("Upload image", type=['jpeg', 'png', 'jpg', 'webp'])
+    	image_file = st.file_uploader("Upload image", type=['jpeg', 'png', 'jpg', 'webp', 'mp4' , 'mov'])
 
     	if image_file is not None:
 
