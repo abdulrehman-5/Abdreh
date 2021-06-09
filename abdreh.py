@@ -73,7 +73,7 @@ def about():
 		'''
 		**Abdul Rehman**
 		
-		Face Detection from images or videos
+		Face Detection from images
 		
 		**Haar Cascade** is an object detection algorithm.
 		It can be used to detect objects in images or videos. 
@@ -101,7 +101,7 @@ def main():
         
         # You can specify more file types below if you want
     	image_file = st.file_uploader("Upload image", type=['jpeg', 'png', 'jpg', 'webp'])
-	video_file = st.file_uploader("Upload video", type=['mp4' , 'mov'])
+	video_file = st.file_uploader("Upload video", type=['mp4', 'mov'])
 
     	if image_file is not None:
 
