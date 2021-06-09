@@ -100,7 +100,7 @@ def main():
     	st.write("Go to the About section from the sidebar to learn about this app")
         
         # You can specify more file types below if you want
-    	image_file = st.file_uploader("Upload image", type=['jpeg', 'png', 'jpg', 'webp'])video_file = st.file_uploader("Upload video", type=['mp4', 'mov'])
+    	image_file = st.file_uploader("Upload image", type=['jpeg', 'png', 'jpg', 'webp'])
 
     	if image_file is not None:
 
@@ -117,23 +117,7 @@ def main():
     elif choice == "About":
     	about()
 	
-	if video_file is not None:
-
-    		video = Video.open(video_file)
-
-    		if st.button("Process"):
-                
-                # result_video is the video with rectangle drawn on it (in case there are faces detected)
-                # result_faces is the array with co-ordinates of bounding box(es)
-    			result_video, result_faces = detect(video=video)
-    			st.video(result_video, use_column_width = True)
-    			st.success("Found {} faces\n".format(len(result_faces)))
-
-    elif choice == "About":
-    	about()
-
-
-
+	
 
 if __name__ == "__main__":
     main()
