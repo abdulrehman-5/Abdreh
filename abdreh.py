@@ -71,7 +71,8 @@ def detect(image):
 def about():
 	st.write(
 		'''
-		Abdul Rehman
+		**Abdul Rehman**
+		
 		Face Detection from images or videos
 		
 		**Haar Cascade** is an object detection algorithm.
@@ -89,15 +90,14 @@ def about():
 
 
 def main():
-    st.title("Face Detection App :sunglasses: ")
-    st.write("**Using the Haar cascade Classifiers**")
-
+    st.title("Face Detection App :smile: ")
+    
     activities = ["Home", "About"]
-    choice = st.sidebar.selectbox("Pick something fun", activities)
+    choice = st.sidebar.selectbox("Pick 1 option", activities)
 
     if choice == "Home":
 
-    	st.write("Go to the About section from the sidebar to learn more about it.")
+    	st.write("Go to the About section from the sidebar to learn about this app")
         
         # You can specify more file types below if you want
     	image_file = st.file_uploader("Upload image", type=['jpeg', 'png', 'jpg', 'webp'])
